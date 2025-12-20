@@ -32,7 +32,7 @@ with DAG(
     playlist_id = get_playlist_id()
     video_ids = get_video_ids(playlist_id)
     extract_data = extract_video_data(video_ids)
-    save_to_json=  save_to_json(extract_data)
+    save_result = save_to_json(extract_data)
 
     # Define dependencies
-    playlist_id >> video_ids >> extract_data >> save_to_json
+    playlist_id >> video_ids >> extract_data >> save_result
