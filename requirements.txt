@@ -1,3 +1,5 @@
 requests~=2.32.4
 python-dotenv~=1.1.1
 apache-airflow~=3.0.6
+soda-core-postgres==3.3.14
+pytest==8.3.2

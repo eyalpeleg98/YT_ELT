@@ -1,6 +1,5 @@
 import requests
 import json
-import os
 from dotenv import load_dotenv
 from datetime import date
 from airflow.decorators import task
